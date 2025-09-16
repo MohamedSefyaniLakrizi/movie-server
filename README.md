@@ -9,7 +9,7 @@ This server serves movie lists via a REST API.
 sudo docker-compose run --rm client python3 client.py 1999 2000 2001
 ```
 
-The year is taken as an input seperated by a space
+The year is taken as an input and is seperated by a space
 
 ```bash
 # example output
@@ -39,7 +39,7 @@ A Python command-line client was developed with the following structure:
 
 This structure make the client side clear and easily maintainable by putting all important variables inside the config and requirements inside the requirements.txt file. It needs to be noted that the linear approach of incrementing the movies number in each page was very slow, so I came up with a binary search solution that is much more efficient and reduces the number of API calls and reduces the complexity from O(n) to O(log(n)).
 
-#### Part 3: Containerize
+### Part 3: Containerize
 
 Container solution used: Docker
 
