@@ -1,5 +1,6 @@
 # Server connection settings
-SERVER_URL = "http://localhost:8080"
+import os
+SERVER_URL = "http://server:8080"
 
 # Authentication credentials
 USERNAME = "username"
