@@ -21,7 +21,7 @@ def main():
     for year in years:
         try:
             num_movies = fetch_movies_by_year(token, year)
-            print(f"{year}: {num_movies} films")
+            print(f"{year}: {num_movies} movies")
         except Exception as e:
             print(f"{year}: Error - {e}")
 
